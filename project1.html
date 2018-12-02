@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Darsh Test 3</title>
+
+     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="grayscale.css"> 
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+
+    <div class="wrapper">
+        <div id="fun">
+           <div class="mobileNavUpper">
+               <div class="upperLeftNav"><a href="#" onclick="closeNav()">Darsh</a></div>
+               <div class="upperRightNav">
+                   <a class="closeBtn" onclick="closeNav()">
+                       <div class="transfomer2">
+                           <div class="barz1"></div>
+                           <div class="barz2"></div>
+                           <div class="barz3"></div>
+                       </div>
+                   </a>
+           </div>
+           </div>
+           <div class="mobileNavLower">
+                   <div><a href="#aboutSection" onclick="closeNav()">About</a></div>
+                   <div><a href="#projectsSection" onclick="closeNav()">Projects</a></div>
+                   <div><a href="#">Contact</a></div>
+           </div>
+       </div>
+
+       <div class="mobileHamburger">
+           <a id="openBtn" onclick="openNav()">
+               <div class="transfomer">
+                   <div class="bar1"></div>
+                   <div class="bar2"></div>
+                   <div class="bar3"></div>
+               </div></a>
+       </div>
+       <nav id="colorNav">
+            <div class="logo">Darsh</div>
+            <ul>
+                <li id="firstLie"><a href="#">About</a></li>
+                <li id="projects"><a href="#projectsSection">Projects &#9662;</a>
+                    <ul id="subNav">
+                        <li><a href="project1.html" target="blank" rel="noopener">Amazon</a></li>
+                        <li><a href="project2.html" target="blank" rel="noopener">Truck Stop</a></li>
+                        <li><a href="project3.html" target="blank" rel="noopener">Arab Cowboy</a></li>
+                    </ul>
+                </li>
+                <li id="lastLie"><a href="#contact-section">Contact</a></li>
+            </ul>
+       </nav>
+        
+<!-- projects --> 
+
+        <section class="hero"></section>
+        <section class="content">
+
+
+
+            <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading -->
+      <h1 class="my-4">Amazon
+        <!-- <small>This project was...</small> -->
+      </h1>
+
+      <!-- Project One -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>Initial Research</h3>
+          <p>
+            -SWOT Analysis
+            -Navigation Flow 
+            -Feature Benefit Matrix
+            -Survey
+            -Interviews
+          </p>
+          <a class="btn btn-primary" href="#">View All</a>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Project Two -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>Empathizing</h3>
+          <p>
+            -Personas
+            -Storyboard
+            -User Scenario
+            -User Journey Map
+            -Empathy Map
+            -Moodboard
+            -Problem Statement
+          </p>
+          <a class="btn btn-primary" href="#">View All</a>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Project Three -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>Designing</h3>
+          <p>
+            -Wireframes
+            -A/B Testing
+            -Invision Prototype
+          </p>
+          <a class="btn btn-primary" href="#">View All</a>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Project Four -->
+      <div class="row">
+
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>High Fidelity</h3>
+          <p>
+            -Sytle Guide
+            -High Resolution Comps
+            -Invision Links
+          </p>
+          <a class="btn btn-primary" href="#">View All</a>
+        </div>
+      </div>
+      <!-- /.row -->
+
+
+            
+        </section>
+
+
+
+
+<!-- js -->
+
+    <script type="text/javascript">
+
+       const navColor = document.getElementById("colorNav");
+       const subNav = document.getElementById("hiddenEle");
+
+       window.addEventListener('scroll', () => {
+           const scrolled = window.scrollY;
+
+           console.log(scrolled);
+
+           if (scrollY > 300) {
+               navColor.style.backgroundColor = "white";
+               navColor.classList.add("black");
+               navColor.style.transition = ".2s";
+           } else {
+               navColor.style.backgroundColor = "";
+               navColor.classList.remove("black");
+               navColor.style.transition = ".2s";
+           }
+       });
+
+       document.getElementById('projects').addEventListener('mouseenter', openMenu);
+
+       function openMenu() {
+           document.getElementById('subNav').classList.toggle('active');
+       };
+
+       document.getElementById('projects').addEventListener('mouseleave', closeMenu);
+
+       function closeMenu() {
+           document.getElementById('subNav').classList.toggle('active');
+       };
+
+       function openNav() {
+           document.getElementById('fun').style.width = "100%";
+           document.getElementById('openBtn').style.opacity = "0";
+       };
+
+       function closeNav() {
+           document.getElementById('fun').style.width = "0";
+           document.getElementById('openBtn').style.opacity = "1";
+       };
+
+    </script>
+  
+
+
+
+
+
+</body>
+</html>
+
+
